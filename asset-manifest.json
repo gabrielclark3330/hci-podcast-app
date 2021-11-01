@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/hci-podcast-app/static/css/main.229d0cf6.chunk.css",
+    "main.js": "/hci-podcast-app/static/js/main.a333e5e8.chunk.js",
+    "main.js.map": "/hci-podcast-app/static/js/main.a333e5e8.chunk.js.map",
+    "runtime-main.js": "/hci-podcast-app/static/js/runtime-main.9396a2c7.js",
+    "runtime-main.js.map": "/hci-podcast-app/static/js/runtime-main.9396a2c7.js.map",
+    "static/js/2.6c23ee2d.chunk.js": "/hci-podcast-app/static/js/2.6c23ee2d.chunk.js",
+    "static/js/2.6c23ee2d.chunk.js.map": "/hci-podcast-app/static/js/2.6c23ee2d.chunk.js.map",
+    "static/js/3.7e5b11fa.chunk.js": "/hci-podcast-app/static/js/3.7e5b11fa.chunk.js",
+    "static/js/3.7e5b11fa.chunk.js.map": "/hci-podcast-app/static/js/3.7e5b11fa.chunk.js.map",
+    "index.html": "/hci-podcast-app/index.html",
+    "static/css/main.229d0cf6.chunk.css.map": "/hci-podcast-app/static/css/main.229d0cf6.chunk.css.map",
+    "static/js/2.6c23ee2d.chunk.js.LICENSE.txt": "/hci-podcast-app/static/js/2.6c23ee2d.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/hci-podcast-app/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9396a2c7.js",
+    "static/js/2.6c23ee2d.chunk.js",
+    "static/css/main.229d0cf6.chunk.css",
+    "static/js/main.a333e5e8.chunk.js"
+  ]
+}
