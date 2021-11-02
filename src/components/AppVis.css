@@ -1,0 +1,1313 @@
+.mediaViewInfo {
+  --web-view-name: iPhone 13 / 13 Pro - Preferences;
+  --web-view-id: iPhone_13__13_Pro_-_Preferences;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+:root {
+  --web-view-ids: iPhone_13__13_Pro_-_Preferences;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+#iPhone_13__13_Pro_-_Preferences {
+  position: absolute;
+  width: 390px;
+  height: 844px;
+  background-color: rgba(255,255,255,1);
+  overflow: hidden;
+  --web-view-name: iPhone 13 / 13 Pro - Preferences;
+  --web-view-id: iPhone_13__13_Pro_-_Preferences;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+#Scroll_Content {
+  position: absolute;
+  width: 365px;
+  height: 574.5px;
+  left: 12px;
+  top: 361.5px;
+  overflow: visible;
+}
+#Recommended_Pods_Header {
+  position: absolute;
+  width: 361px;
+  height: 40px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Relevant_Podcasts {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 65px;
+  height: 40px;
+  text-align: left;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  color: rgba(21,28,42,0.871);
+  letter-spacing: 0.5882352828979492px;
+}
+#View_All {
+  left: 302px;
+  top: 12.5px;
+  position: absolute;
+  overflow: hidden;
+  width: 60px;
+  height: 15px;
+  text-align: left;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: rgba(243,94,62,1);
+  letter-spacing: 1.6666667175292968px;
+}
+#Recommended_Podcasts {
+  position: absolute;
+  width: 365px;
+  height: 513px;
+  left: 0px;
+  top: 61.5px;
+  overflow: visible;
+}
+#Base {
+  fill: rgba(245,245,245,1);
+}
+.Base {
+  position: absolute;
+  overflow: visible;
+  width: 365px;
+  height: 513px;
+  left: 0px;
+  top: 0px;
+}
+#Genre6 {
+  position: absolute;
+  width: 317.799px;
+  height: 52.618px;
+  left: 23.089px;
+  top: 434px;
+  overflow: visible;
+}
+#Line_3_Copy_2 {
+  fill: transparent;
+  stroke: rgba(151,151,151,0.2);
+  stroke-width: 1.0735293626785278px;
+  stroke-linejoin: miter;
+  stroke-linecap: square;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_3_Copy_2 {
+  overflow: visible;
+  position: absolute;
+  width: 318.873px;
+  height: 1.074px;
+  left: 0px;
+  top: 52.618px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Architecture {
+  left: 106.911px;
+  top: 0px;
+  position: absolute;
+  overflow: hidden;
+  width: 107px;
+  height: 22px;
+  text-align: left;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17.176469802856445px;
+  color: rgba(84,84,84,1);
+}
+#IconlyLightPlus {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 284.911px;
+  top: 0px;
+  overflow: visible;
+}
+#Plus {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 2px;
+  top: 2px;
+  overflow: visible;
+}
+#Line_185 {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_185 {
+  overflow: visible;
+  position: absolute;
+  width: 1.5px;
+  height: 8.826px;
+  left: 10px;
+  top: 6.327px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Line_186 {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_186 {
+  overflow: visible;
+  position: absolute;
+  width: 8.833px;
+  height: 1.5px;
+  left: 6.333px;
+  top: 9.991px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Path {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Path {
+  overflow: visible;
+  position: absolute;
+  width: 21.5px;
+  height: 21.5px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Genre5 {
+  position: absolute;
+  width: 317.799px;
+  height: 50.103px;
+  left: 23.089px;
+  top: 356px;
+  overflow: visible;
+}
+#Line_3_Copy {
+  fill: transparent;
+  stroke: rgba(151,151,151,0.2);
+  stroke-width: 1.0735293626785278px;
+  stroke-linejoin: miter;
+  stroke-linecap: square;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_3_Copy {
+  overflow: visible;
+  position: absolute;
+  width: 318.873px;
+  height: 1.074px;
+  left: 0px;
+  top: 50.103px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Museums {
+  left: 119.911px;
+  top: 0px;
+  position: absolute;
+  overflow: hidden;
+  width: 80px;
+  height: 22px;
+  text-align: left;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17.176469802856445px;
+  color: rgba(84,84,84,1);
+}
+#IconlyLightPlus_x {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 284.911px;
+  top: 0px;
+  overflow: visible;
+}
+#Plus_y {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 2px;
+  top: 2px;
+  overflow: visible;
+}
+#Line_185_z {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_185_z {
+  overflow: visible;
+  position: absolute;
+  width: 1.5px;
+  height: 8.826px;
+  left: 10px;
+  top: 6.327px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Line_186_ {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_186_ {
+  overflow: visible;
+  position: absolute;
+  width: 8.833px;
+  height: 1.5px;
+  left: 6.333px;
+  top: 9.991px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Path_ {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Path_ {
+  overflow: visible;
+  position: absolute;
+  width: 21.5px;
+  height: 21.5px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Genre4 {
+  position: absolute;
+  width: 317.799px;
+  height: 53.588px;
+  left: 23.089px;
+  top: 272px;
+  overflow: visible;
+}
+#Music {
+  left: 135.911px;
+  top: 2px;
+  position: absolute;
+  overflow: hidden;
+  width: 49px;
+  height: 22px;
+  text-align: left;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17.176469802856445px;
+  color: rgba(84,84,84,1);
+}
+#Line_3 {
+  fill: transparent;
+  stroke: rgba(151,151,151,0.2);
+  stroke-width: 1.0735293626785278px;
+  stroke-linejoin: miter;
+  stroke-linecap: square;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_3 {
+  overflow: visible;
+  position: absolute;
+  width: 318.873px;
+  height: 1.074px;
+  left: 0px;
+  top: 53.588px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#IconlyLightPlus_ {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 284.911px;
+  top: 0px;
+  overflow: visible;
+}
+#Plus_ {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 2px;
+  top: 2px;
+  overflow: visible;
+}
+#Line_185_ {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_185_ {
+  overflow: visible;
+  position: absolute;
+  width: 1.5px;
+  height: 8.826px;
+  left: 10px;
+  top: 6.327px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Line_186_ba {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_186_ba {
+  overflow: visible;
+  position: absolute;
+  width: 8.833px;
+  height: 1.5px;
+  left: 6.333px;
+  top: 9.991px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Path_ba {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Path_ba {
+  overflow: visible;
+  position: absolute;
+  width: 21.5px;
+  height: 21.5px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Genre3 {
+  position: absolute;
+  width: 317.799px;
+  height: 52.618px;
+  left: 23.089px;
+  top: 190px;
+  overflow: visible;
+}
+#Line_3_Copy_2_bb {
+  fill: transparent;
+  stroke: rgba(151,151,151,0.2);
+  stroke-width: 1.0735293626785278px;
+  stroke-linejoin: miter;
+  stroke-linecap: square;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_3_Copy_2_bb {
+  overflow: visible;
+  position: absolute;
+  width: 318.873px;
+  height: 1.074px;
+  left: 0px;
+  top: 52.618px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Dance {
+  left: 132.911px;
+  top: 2px;
+  position: absolute;
+  overflow: hidden;
+  width: 55px;
+  height: 22px;
+  text-align: left;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17.176469802856445px;
+  color: rgba(84,84,84,1);
+}
+#IconlyLightPlus_bd {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 284.911px;
+  top: 0px;
+  overflow: visible;
+}
+#Plus_be {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 2px;
+  top: 2px;
+  overflow: visible;
+}
+#Line_185_bf {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_185_bf {
+  overflow: visible;
+  position: absolute;
+  width: 1.5px;
+  height: 8.826px;
+  left: 10px;
+  top: 6.327px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Line_186_bg {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_186_bg {
+  overflow: visible;
+  position: absolute;
+  width: 8.833px;
+  height: 1.5px;
+  left: 6.333px;
+  top: 9.991px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Path_bh {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Path_bh {
+  overflow: visible;
+  position: absolute;
+  width: 21.5px;
+  height: 21.5px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Genre2 {
+  position: absolute;
+  width: 317.799px;
+  height: 50.103px;
+  left: 23.089px;
+  top: 112px;
+  overflow: visible;
+}
+#Line_3_Copy_bj {
+  fill: transparent;
+  stroke: rgba(151,151,151,0.2);
+  stroke-width: 1.0735293626785278px;
+  stroke-linejoin: miter;
+  stroke-linecap: square;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_3_Copy_bj {
+  overflow: visible;
+  position: absolute;
+  width: 318.873px;
+  height: 1.074px;
+  left: 0px;
+  top: 50.103px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Classical_Art {
+  left: 104.911px;
+  top: 1px;
+  position: absolute;
+  overflow: hidden;
+  width: 110px;
+  height: 22px;
+  text-align: left;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17.176469802856445px;
+  color: rgba(84,84,84,1);
+}
+#IconlyLightPlus_bl {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 284.911px;
+  top: 0px;
+  overflow: visible;
+}
+#Plus_bm {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 2px;
+  top: 2px;
+  overflow: visible;
+}
+#Line_185_bn {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_185_bn {
+  overflow: visible;
+  position: absolute;
+  width: 1.5px;
+  height: 8.826px;
+  left: 10px;
+  top: 6.327px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Line_186_bo {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_186_bo {
+  overflow: visible;
+  position: absolute;
+  width: 8.833px;
+  height: 1.5px;
+  left: 6.333px;
+  top: 9.991px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Path_bp {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Path_bp {
+  overflow: visible;
+  position: absolute;
+  width: 21.5px;
+  height: 21.5px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Genre1 {
+  position: absolute;
+  width: 317.799px;
+  height: 48.588px;
+  left: 23.089px;
+  top: 33px;
+  overflow: visible;
+}
+#Line_3_br {
+  fill: transparent;
+  stroke: rgba(151,151,151,0.2);
+  stroke-width: 1.0735293626785278px;
+  stroke-linejoin: miter;
+  stroke-linecap: square;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_3_br {
+  overflow: visible;
+  position: absolute;
+  width: 318.873px;
+  height: 1.074px;
+  left: 0px;
+  top: 48.588px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Modern_Art {
+  left: 110.911px;
+  top: 1px;
+  position: absolute;
+  overflow: hidden;
+  width: 99px;
+  height: 22px;
+  text-align: left;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17.176469802856445px;
+  color: rgba(84,84,84,1);
+}
+#IconlyLightPlus_bt {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 284.911px;
+  top: 0px;
+  overflow: visible;
+}
+#Plus_bu {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 2px;
+  top: 2px;
+  overflow: visible;
+}
+#Line_185_bv {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_185_bv {
+  overflow: visible;
+  position: absolute;
+  width: 1.5px;
+  height: 8.826px;
+  left: 10px;
+  top: 6.327px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Line_186_bw {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_186_bw {
+  overflow: visible;
+  position: absolute;
+  width: 8.833px;
+  height: 1.5px;
+  left: 6.333px;
+  top: 9.99px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Path_bx {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Path_bx {
+  overflow: visible;
+  position: absolute;
+  width: 21.5px;
+  height: 21.5px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Footer {
+  position: absolute;
+  width: 390px;
+  height: 122px;
+  left: 0px;
+  top: 771px;
+  overflow: visible;
+}
+#blue_top_box {
+  fill: rgba(78,49,181,1);
+}
+.blue_top_box {
+  filter: drop-shadow(0px 0px 60px rgba(75, 46, 178, 0.196));
+  position: absolute;
+  overflow: visible;
+  width: 570px;
+  height: 260px;
+  left: 0px;
+  top: 17px;
+}
+#IconlyLightHome {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 36px;
+  top: 32px;
+  overflow: visible;
+}
+#Home {
+  position: absolute;
+  width: 23.75px;
+  height: 25px;
+  left: 3.125px;
+  top: 2.5px;
+  overflow: visible;
+}
+#Home_b {
+  fill: transparent;
+  stroke: rgba(255,255,255,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Home_b {
+  overflow: visible;
+  position: absolute;
+  width: 25.25px;
+  height: 26.642px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#IconlyLightEdit_Square {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 324px;
+  top: 30px;
+  overflow: visible;
+  --web-animation: fadein undefineds undefined;
+  --web-action-type: page;
+  --web-action-target: iPhone_13___13_Pro___Preferences.html;
+  cursor: pointer;
+}
+#Edit_Square {
+  position: absolute;
+  width: 23.546px;
+  height: 23.588px;
+  left: 3.438px;
+  top: 3.438px;
+  overflow: visible;
+}
+#Stroke_1 {
+  fill: transparent;
+  stroke: rgba(255,255,255,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Stroke_1 {
+  overflow: visible;
+  position: absolute;
+  width: 25.039px;
+  height: 25.04px;
+  left: 0px;
+  top: 0.048px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Stroke_3 {
+  fill: transparent;
+  stroke: rgba(255,255,255,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Stroke_3 {
+  overflow: visible;
+  position: absolute;
+  width: 18.36px;
+  height: 18.514px;
+  left: 6.686px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Stroke_5 {
+  fill: transparent;
+  stroke: rgba(255,255,255,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Stroke_5 {
+  overflow: visible;
+  position: absolute;
+  width: 7.829px;
+  height: 7.829px;
+  left: 15.519px;
+  top: 2.315px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#IconlyLightProfile {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 180px;
+  top: 32px;
+  overflow: visible;
+}
+#Profile {
+  position: absolute;
+  width: 17.925px;
+  height: 23.008px;
+  left: 6.018px;
+  top: 3.518px;
+  overflow: visible;
+}
+#Stroke_1_ca {
+  fill: transparent;
+  stroke: rgba(255,255,255,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Stroke_1_ca {
+  overflow: visible;
+  position: absolute;
+  width: 19.425px;
+  height: 8.843px;
+  left: 0px;
+  top: 15.665px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Stroke_3_cb {
+  fill: transparent;
+  stroke: rgba(255,255,255,1);
+  stroke-width: 1.4285714626312256px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Stroke_3_cb {
+  overflow: visible;
+  position: absolute;
+  width: 12.918px;
+  height: 12.918px;
+  left: 3.218px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Your_Genres {
+  position: absolute;
+  width: 365.25px;
+  height: 140.419px;
+  left: 12px;
+  top: 192px;
+  overflow: visible;
+}
+#Rectangle {
+  fill: rgba(255,255,255,1);
+}
+.Rectangle {
+  filter: drop-shadow(0px 10px 62px rgba(0, 0, 0, 0.055));
+  position: absolute;
+  overflow: visible;
+  width: 550.25px;
+  height: 326.419px;
+  left: 0px;
+  top: 0px;
+}
+#Football {
+  left: 162px;
+  top: 48px;
+  position: absolute;
+  overflow: hidden;
+  width: 72px;
+  height: 22px;
+  text-align: left;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17.176469802856445px;
+  color: rgba(84,84,84,1);
+}
+#Modern_Art_cf {
+  left: 11px;
+  top: 48px;
+  position: absolute;
+  overflow: hidden;
+  width: 99px;
+  height: 22px;
+  text-align: left;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17.176469802856445px;
+  color: rgba(84,84,84,1);
+}
+#Feature {
+  position: absolute;
+  width: 75px;
+  height: 31px;
+  left: 13.093px;
+  top: 2.5px;
+  overflow: visible;
+}
+#Your_Genres_ch {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 76px;
+  height: 31px;
+  text-align: left;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  color: rgba(186,186,186,1);
+}
+#Divider {
+  opacity: 0.5;
+  fill: transparent;
+  stroke: rgba(223,221,221,1);
+  stroke-width: 1.0467835664749146px;
+  stroke-linejoin: miter;
+  stroke-linecap: square;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Divider {
+  overflow: visible;
+  position: absolute;
+  width: 365.297px;
+  height: 1.047px;
+  left: 1px;
+  top: 33.472px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#IconlyLightClose_Square {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 109px;
+  top: 48px;
+  overflow: visible;
+}
+#Close_Square {
+  position: absolute;
+  width: 18.5px;
+  height: 18.5px;
+  left: 2.75px;
+  top: 2.75px;
+  overflow: visible;
+}
+#Stroke_1_cl {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Stroke_1_cl {
+  overflow: visible;
+  position: absolute;
+  width: 6.913px;
+  height: 6.913px;
+  left: 6.853px;
+  top: 6.845px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Stroke_2 {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Stroke_2 {
+  overflow: visible;
+  position: absolute;
+  width: 6.917px;
+  height: 6.918px;
+  left: 6.851px;
+  top: 6.843px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Stroke_3_cn {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Stroke_3_cn {
+  overflow: visible;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#IconlyLightClose_Square_co {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 233px;
+  top: 48px;
+  overflow: visible;
+}
+#Close_Square_cp {
+  position: absolute;
+  width: 18.5px;
+  height: 18.5px;
+  left: 2.75px;
+  top: 2.75px;
+  overflow: visible;
+}
+#Stroke_1_cq {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Stroke_1_cq {
+  overflow: visible;
+  position: absolute;
+  width: 6.913px;
+  height: 6.913px;
+  left: 6.853px;
+  top: 6.845px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Stroke_2_cr {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Stroke_2_cr {
+  overflow: visible;
+  position: absolute;
+  width: 6.917px;
+  height: 6.918px;
+  left: 6.851px;
+  top: 6.843px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Stroke_3_cs {
+  fill: transparent;
+  stroke: rgba(19,15,38,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Stroke_3_cs {
+  overflow: visible;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Top_Card {
+  position: absolute;
+  width: 390px;
+  height: 171px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#blue_top_box_cu {
+  fill: rgba(78,49,181,1);
+}
+.blue_top_box_cu {
+  filter: drop-shadow(0px 0px 60px rgba(75, 46, 178, 0.196));
+  position: absolute;
+  overflow: visible;
+  width: 570px;
+  height: 351px;
+  left: 0px;
+  top: 0px;
+}
+#Search_Bar {
+  position: absolute;
+  width: 364px;
+  height: 40px;
+  left: 13px;
+  top: 116px;
+  overflow: visible;
+}
+#Rectangle_cw {
+  fill: rgba(255,255,255,1);
+}
+.Rectangle_cw {
+  filter: drop-shadow(0px 10px 62px rgba(0, 0, 0, 0.055));
+  position: absolute;
+  overflow: visible;
+  width: 550px;
+  height: 226px;
+  left: 0px;
+  top: 0px;
+}
+#Your_Activity_Copy {
+  left: 52px;
+  top: 13.6px;
+  position: absolute;
+  overflow: hidden;
+  width: 235px;
+  height: 14.399999618530273px;
+  text-align: left;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(0,0,0,1);
+}
+#Shape {
+  fill: rgba(0,0,0,1);
+}
+.Shape {
+  overflow: visible;
+  position: absolute;
+  width: 19.54px;
+  height: 19.492px;
+  left: 13px;
+  top: 11px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Header {
+  position: absolute;
+  width: 343.563px;
+  height: 22.078px;
+  left: 23px;
+  top: 44px;
+  overflow: visible;
+}
+#Path_c {
+  fill: rgba(255,255,255,1);
+}
+.Path_c {
+  overflow: visible;
+  position: absolute;
+  width: 22.918px;
+  height: 18.742px;
+  transform: translate(0px, 1px) matrix(1,0,0,1,0,0.9375) rotate(180deg);
+  transform-origin: center;
+  left: 0px;
+  top: 0px;
+}
+#Episode {
+  left: 119px;
+  top: 0px;
+  position: absolute;
+  overflow: hidden;
+  width: 106px;
+  height: 21px;
+  text-align: left;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  color: rgba(255,255,255,1);
+  letter-spacing: 0.5882352828979492px;
+}
+#IconlyLightSetting {
+  position: absolute;
+  width: 22.057px;
+  height: 22.066px;
+  left: 321.506px;
+  top: 0.012px;
+  overflow: visible;
+}
+#Setting {
+  position: absolute;
+  width: 16.347px;
+  height: 17.673px;
+  left: 3.013px;
+  top: 2.094px;
+  overflow: visible;
+}
+#Path_33946 {
+  fill: transparent;
+  stroke: rgba(255,255,255,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Path_33946 {
+  overflow: visible;
+  position: absolute;
+  width: 18.079px;
+  height: 19.173px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1,0,0,1,0,0);
+}
+#Ellipse_737 {
+  fill: transparent;
+  stroke: rgba(255,255,255,1);
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Ellipse_737 {
+  position: absolute;
+  overflow: visible;
+  width: 6.345px;
+  height: 6.347px;
+  left: 5.753px;
+  top: 6.413px;
+}
