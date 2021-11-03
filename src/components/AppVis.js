@@ -7,6 +7,7 @@ import './AppVis.css';
 export function PodcastApp(props){
   let enteredString = " ";
   const [state, setState]= useState({
+    lastEnteredGenre: enteredString,
     enteredGenre: enteredString,
     podcastsArr: ['Alternative Health', 'Amateur', 'Arts', 'Automotive', 'Aviation', 'Buddhism', 'Business', 'Business News', 'Careers', 'Christianity', 'College & High School', 'Comedy', 'Design', 'Education', 'Educational Technology', 'Fashion & Beauty', 'Fitness & Nutrition', 'Food', 'Gadgets', 'Games & Hobbies', 'Government & Organizations', 'Health', 'Higher Education', 'Hinduism', 'History', 'Hobbies', 'Investing', 'Islam', 'Judaism', 'K-12', 'Kids & Family', 'Language Courses', 'Literature', 'Local', 'Management & Marketing', 'Medicine', 'Music', 'National', 'Natural Sciences', 'News & Politics', 'Non-Profit', 'Other', 'Other Games', 'Outdoor', 'Performing Arts', 'Personal Journals', 'Philosophy', 'Places & Travel', 'Podcasting', 'Podcasts', 'Professional', 'Regional', 'Religion & Spirituality', 'Science & Medicine', 'Self-Help', 'Sexuality', 'Shopping', 'Social Sciences', 'Society & Culture', 'Software How-To', 'Spirituality', 'Sports & Recreation', 'TV & Film', 'Tech News', 'Technology', 'Training', 'Video Games', 'Visual Arts'],
     selectedGenres: new Set(),
@@ -16,6 +17,7 @@ export function PodcastApp(props){
     enteredString = e.target.value;
     setState({
       ...state,
+      lastEnteredGenre: state.enteredGenre,
       enteredGenre: enteredString,
     });
   }
@@ -29,6 +31,9 @@ export function PodcastApp(props){
     return numMatched;
   }
   function getXClosestPodcastGenres(targetStr, x) {
+    if (targetStr===state.lastEnteredGenre) {
+      return state.podcastsArr.slice(0,x+1);
+    }
     targetStr = state.enteredGenre;
     let keyArr = [];
     for (const element of state.podcastsArr) {
@@ -38,14 +43,25 @@ export function PodcastApp(props){
     state.podcastsArr.sort(function(a, b){  
       return keyArr[state.podcastsArr.indexOf(a)]<keyArr[state.podcastsArr.indexOf(b)]?1:-1;
     });
-
-    console.log(state.podcastsArr);
+    //console.log(state.podcastsArr);
     return state.podcastsArr.slice(0,x+1);
   }
-  function addGenreToState (genre) {
-    const genLst = new Set(...(state.selectedGenres), genre);
+  function addGenreToSelected (genre) {
+    console.log(state);
+    const genLst = new Set(state.selectedGenres);
+    genLst.add(genre);
     setState({
       ...state,
+      lastEnteredGenre: state.enteredGenre,
+      selectedGenres: genLst,
+    });
+  }
+  function removeSelectedGenre (genre) {
+    const genLst = new Set(state.selectedGenres);
+    genLst.delete(genre);
+    setState({
+      ...state,
+      lastEnteredGenre: state.enteredGenre,
       selectedGenres: genLst,
     });
   }
@@ -53,49 +69,20 @@ export function PodcastApp(props){
     let retArr = []
     for (const genre of yourGenres) {
       retArr.push(
-        <div>{genre}</div>
-      );
-    }
-    return(retArr);
-  }
-  function renderGenresList (genres) {
-    let retArr = []
-    for (const genre of genres) {
-      retArr.push(
-			<div id="Genre2">
-				<svg class="Line_3_Copy_bj" viewBox="0.545 1.074 317.799 1.0735293626785278">
-					<path id="Line_3_Copy_bj" d="M 0.5451751351356506 1.073529362678528 L 318.3441772460938 1.073529362678528">
-					</path>
-				</svg>
-				<div id="Classical_Art">
-					<span><button onClick={()=>addGenreToState(genre)}>{genre}</button></span>
-				</div>
-				<div id="IconlyLightPlus_bl" class="Iconly_Light_Plus">
-					<div id="Plus_bm">
-						<svg class="Line_185_bn" viewBox="0.476 0 1.5 7.326">
-							<path id="Line_185_bn" d="M 0.4761904776096344 0 L 0.4761904776096344 7.326355934143066">
-							</path>
-						</svg>
-						<svg class="Line_186_bo" viewBox="0 0.476 7.333 1.5">
-							<path id="Line_186_bo" d="M 7.333333492279053 0.4757373929023743 L 0 0.4757373929023743">
-							</path>
-						</svg>
-						<svg class="Path_bp" viewBox="0 0 20 20">
-							<path id="Path_bp" d="M 14.68571472167969 0 L 5.314285755157471 0 C 2.047619104385376 0 0 2.312083721160889 0 5.585156917572021 L 0 14.41484260559082 C 0 17.68791580200195 2.038095235824585 20 5.314285755157471 20 L 14.68571472167969 20 C 17.96190452575684 20 20 17.68791580200195 20 14.41484260559082 L 20 5.585156917572021 C 20 2.312083721160889 17.96190452575684 0 14.68571472167969 0 Z">
-							</path>
-						</svg>
-					</div>
-				</div>
-			</div>
+		<div id="Modern_Art_cf">
+			<span>{genre}   </span>
+      <button onClick={()=>removeSelectedGenre(genre)}>delete</button>
+		</div>
       );
     }
     return(retArr);
   }
 
-
-
-
-
+  /*
+  <div>
+    {renderSeletedList(state.selectedGenres)}
+  </div>
+  */
 
 
 
@@ -147,7 +134,7 @@ export function PodcastApp(props){
 					</path>
 				</svg>
 				<div id="Museums">
-					<span>Museums</span>
+					<span>{getXClosestPodcastGenres(state.enteredGenre, 5)[4]}</span>
 				</div>
 				<div id="IconlyLightPlus_x" class="Iconly_Light_Plus">
 					<div id="Plus_y">
@@ -166,9 +153,9 @@ export function PodcastApp(props){
 					</div>
 				</div>
 			</div>
-			<div id="Genre4">
+			<button id="Genre4" onClick={()=>addGenreToSelected(getXClosestPodcastGenres(state.enteredGenre, 5)[3])}>
 				<div id="Music">
-					<span>Music</span>
+					<span>{getXClosestPodcastGenres(state.enteredGenre, 5)[3]}</span>
 				</div>
 				<svg class="Line_3" viewBox="0.545 1.074 317.799 1.0735293626785278">
 					<path id="Line_3" d="M 0.5451751351356506 1.073529362678528 L 318.3441772460938 1.073529362678528">
@@ -190,14 +177,14 @@ export function PodcastApp(props){
 						</svg>
 					</div>
 				</div>
-			</div>
-			<div id="Genre3">
+			</button>
+			<button id="Genre3" onClick={()=>addGenreToSelected(getXClosestPodcastGenres(state.enteredGenre, 5)[2])}>
 				<svg class="Line_3_Copy_2_bb" viewBox="0.545 1.074 317.799 1.0735293626785278">
 					<path id="Line_3_Copy_2_bb" d="M 0.5451751351356506 1.073529362678528 L 318.3441772460938 1.073529362678528">
 					</path>
 				</svg>
 				<div id="Dance">
-					<span>Dance</span>
+					<span>{getXClosestPodcastGenres(state.enteredGenre, 5)[2]}</span>
 				</div>
 				<div id="IconlyLightPlus_bd" class="Iconly_Light_Plus">
 					<div id="Plus_be">
@@ -215,14 +202,14 @@ export function PodcastApp(props){
 						</svg>
 					</div>
 				</div>
-			</div>
-			<div id="Genre2">
+			</button>
+			<button id="Genre2" onClick={()=>addGenreToSelected(getXClosestPodcastGenres(state.enteredGenre, 5)[1])}>
 				<svg class="Line_3_Copy_bj" viewBox="0.545 1.074 317.799 1.0735293626785278">
 					<path id="Line_3_Copy_bj" d="M 0.5451751351356506 1.073529362678528 L 318.3441772460938 1.073529362678528">
 					</path>
 				</svg>
 				<div id="Classical_Art">
-					<span>Classical Art</span>
+					<span>{getXClosestPodcastGenres(state.enteredGenre, 5)[1]}</span>
 				</div>
 				<div id="IconlyLightPlus_bl" class="Iconly_Light_Plus">
 					<div id="Plus_bm">
@@ -240,14 +227,14 @@ export function PodcastApp(props){
 						</svg>
 					</div>
 				</div>
-			</div>
-			<div id="Genre1">
+			</button>
+			<button id="Genre1" onClick={()=>addGenreToSelected(getXClosestPodcastGenres(state.enteredGenre, 5)[0])}>
 				<svg class="Line_3_br" viewBox="0.545 1.074 317.799 1.0735293626785278">
 					<path id="Line_3_br" d="M 0.5451751351356506 1.073529362678528 L 318.3441772460938 1.073529362678528">
 					</path>
 				</svg>
 				<div id="Modern_Art">
-					<span>Modern Art</span>
+					<span>{getXClosestPodcastGenres(state.enteredGenre, 5)[0]}</span>
 				</div>
 				<div id="IconlyLightPlus_bt" class="Iconly_Light_Plus">
 					<div id="Plus_bu">
@@ -265,7 +252,7 @@ export function PodcastApp(props){
 						</svg>
 					</div>
 				</div>
-			</div>
+			</button>
 		</div>
 	</div>
 	<div id="Footer" class="Footer">
@@ -315,12 +302,7 @@ export function PodcastApp(props){
 			<rect id="Rectangle" rx="15.63230037689209" ry="15.63230037689209" x="0" y="0" width="364.25" height="140.419">
 			</rect>
 		</svg>
-		<div id="Football">
-			<span>Football</span>
-		</div>
-		<div id="Modern_Art_cf">
-			<span>Modern Art</span>
-		</div>
+    {renderSeletedList(state.selectedGenres)} 
 		<div id="Feature">
 			<div id="Your_Genres_ch">
 				<span>Your Genres</span>
@@ -330,38 +312,6 @@ export function PodcastApp(props){
 			<path id="Divider" d="M 0.907055139541626 1.472248554229736 L 365.1570129394531 1.472248554229736">
 			</path>
 		</svg>
-		<div id="IconlyLightClose_Square" class="Iconly_Light_Close_Square">
-			<div id="Close_Square">
-				<svg class="Stroke_1_cl" viewBox="0 0 4.792 4.792">
-					<path id="Stroke_1_cl" d="M 4.791999816894531 0 L 0 4.791999816894531">
-					</path>
-				</svg>
-				<svg class="Stroke_2" viewBox="0 0 4.796 4.797">
-					<path id="Stroke_2" d="M 4.796000003814697 4.796999931335449 L 0 0">
-					</path>
-				</svg>
-				<svg class="Stroke_3_cn" viewBox="0 0 18.5 18.5">
-					<path id="Stroke_3_cn" d="M 13.58399963378906 0 L 4.914999961853027 0 C 1.894000053405762 0 0 2.138999938964844 0 5.165999889373779 L 0 13.33399963378906 C 0 16.36100006103516 1.884999990463257 18.5 4.914999961853027 18.5 L 13.58300018310547 18.5 C 16.61400032043457 18.5 18.5 16.36100006103516 18.5 13.33399963378906 L 18.5 5.165999889373779 C 18.5 2.138999938964844 16.61400032043457 0 13.58399963378906 0 Z">
-					</path>
-				</svg>
-			</div>
-		</div>
-		<div id="IconlyLightClose_Square_co" class="Iconly_Light_Close_Square">
-			<div id="Close_Square_cp">
-				<svg class="Stroke_1_cq" viewBox="0 0 4.792 4.792">
-					<path id="Stroke_1_cq" d="M 4.791999816894531 0 L 0 4.791999816894531">
-					</path>
-				</svg>
-				<svg class="Stroke_2_cr" viewBox="0 0 4.796 4.797">
-					<path id="Stroke_2_cr" d="M 4.796000003814697 4.796999931335449 L 0 0">
-					</path>
-				</svg>
-				<svg class="Stroke_3_cs" viewBox="0 0 18.5 18.5">
-					<path id="Stroke_3_cs" d="M 13.58399963378906 0 L 4.914999961853027 0 C 1.894000053405762 0 0 2.138999938964844 0 5.165999889373779 L 0 13.33399963378906 C 0 16.36100006103516 1.884999990463257 18.5 4.914999961853027 18.5 L 13.58300018310547 18.5 C 16.61400032043457 18.5 18.5 16.36100006103516 18.5 13.33399963378906 L 18.5 5.165999889373779 C 18.5 2.138999938964844 16.61400032043457 0 13.58399963378906 0 Z">
-					</path>
-				</svg>
-			</div>
-		</div>
 	</div>
 	<div id="Top_Card">
 		<svg class="blue_top_box_cu">
@@ -373,10 +323,6 @@ export function PodcastApp(props){
 <div className="Rectangle_cws">
   <input id="inputField" className="inputField" type="text"
     placeholder={ "Genres and Subgenres" } onChange={handleChange}/>
-  <div>
-    {renderGenresList(getXClosestPodcastGenres(state.enteredGenre, 5))}
-    {renderSeletedList(state.selectedGenres)}
-  </div>
 </div>
 			<svg class="Rectangle_cw">
 				<rect id="Rectangle_cw" rx="15.63230037689209" ry="15.63230037689209" x="0" y="0" width="364" height="40">

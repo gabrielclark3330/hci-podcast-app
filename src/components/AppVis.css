@@ -226,10 +226,9 @@
   transform: matrix(1,0,0,1,0,0);
 }
 #Museums {
-  left: 119.911px;
+  left: 110.911px;
   top: 0px;
   position: absolute;
-  overflow: hidden;
   width: 80px;
   height: 22px;
   text-align: left;
@@ -318,10 +317,9 @@
   overflow: visible;
 }
 #Music {
-  left: 135.911px;
+  left: 104.911px;
   top: 2px;
   position: absolute;
-  overflow: hidden;
   width: 49px;
   height: 22px;
   text-align: left;
@@ -446,10 +444,9 @@
   transform: matrix(1,0,0,1,0,0);
 }
 #Dance {
-  left: 132.911px;
+  left: 104.911px;
   top: 2px;
   position: absolute;
-  overflow: hidden;
   width: 55px;
   height: 22px;
   text-align: left;
@@ -559,7 +556,6 @@
   left: 104.911px;
   top: 1px;
   position: absolute;
-  overflow: hidden;
   width: 110px;
   height: 22px;
   text-align: left;
@@ -669,7 +665,6 @@
   left: 110.911px;
   top: 1px;
   position: absolute;
-  overflow: hidden;
   width: 99px;
   height: 22px;
   text-align: left;
@@ -936,7 +931,9 @@
   height: 140.419px;
   left: 12px;
   top: 192px;
-  overflow: visible;
+  overflow: hidden;
+  display: flex;
+  padding-top: 50px;
 }
 #Rectangle {
   fill: rgba(255,255,255,1);
@@ -946,7 +943,7 @@
   position: absolute;
   overflow: visible;
   width: 550.25px;
-  height: 326.419px;
+  height: 150.419px;
   left: 0px;
   top: 0px;
 }
@@ -965,10 +962,7 @@
   color: rgba(84,84,84,1);
 }
 #Modern_Art_cf {
-  left: 11px;
-  top: 48px;
-  position: absolute;
-  overflow: hidden;
+  z-index: 2;
   width: 99px;
   height: 22px;
   text-align: left;
@@ -1020,11 +1014,8 @@
   transform: matrix(1,0,0,1,0,0);
 }
 #IconlyLightClose_Square {
-  position: absolute;
   width: 24px;
   height: 24px;
-  left: 109px;
-  top: 48px;
   overflow: visible;
 }
 #Close_Square {
@@ -1090,11 +1081,8 @@
   transform: matrix(1,0,0,1,0,0);
 }
 #IconlyLightClose_Square_co {
-  position: absolute;
   width: 24px;
   height: 24px;
-  left: 233px;
-  top: 48px;
   overflow: visible;
 }
 #Close_Square_cp {
