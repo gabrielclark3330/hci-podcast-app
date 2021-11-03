@@ -1,8 +1,105 @@
 import React from "react";
+import { GenreInputField } from "./SearchBar";
+import { useState } from "react";
 import './AppVis.css';
 
 
-export function PodcastApp(){
+export function PodcastApp(props){
+  let enteredString = " ";
+  const [state, setState]= useState({
+    enteredGenre: enteredString,
+    podcastsArr: ['Alternative Health', 'Amateur', 'Arts', 'Automotive', 'Aviation', 'Buddhism', 'Business', 'Business News', 'Careers', 'Christianity', 'College & High School', 'Comedy', 'Design', 'Education', 'Educational Technology', 'Fashion & Beauty', 'Fitness & Nutrition', 'Food', 'Gadgets', 'Games & Hobbies', 'Government & Organizations', 'Health', 'Higher Education', 'Hinduism', 'History', 'Hobbies', 'Investing', 'Islam', 'Judaism', 'K-12', 'Kids & Family', 'Language Courses', 'Literature', 'Local', 'Management & Marketing', 'Medicine', 'Music', 'National', 'Natural Sciences', 'News & Politics', 'Non-Profit', 'Other', 'Other Games', 'Outdoor', 'Performing Arts', 'Personal Journals', 'Philosophy', 'Places & Travel', 'Podcasting', 'Podcasts', 'Professional', 'Regional', 'Religion & Spirituality', 'Science & Medicine', 'Self-Help', 'Sexuality', 'Shopping', 'Social Sciences', 'Society & Culture', 'Software How-To', 'Spirituality', 'Sports & Recreation', 'TV & Film', 'Tech News', 'Technology', 'Training', 'Video Games', 'Visual Arts'],
+    selectedGenres: new Set(),
+  });
+
+  function handleChange(e) {
+    enteredString = e.target.value;
+    setState({
+      ...state,
+      enteredGenre: enteredString,
+    });
+  }
+  function numberOfMatchedChar(s1, s2) {
+    s1 = s1.toLowerCase();
+    s2 = s2.toLowerCase();
+    let numMatched = 0;
+    while (numMatched<s1.length && numMatched<s2.length && s1.charAt(numMatched)===s2.charAt(numMatched)) {
+      numMatched+=1;
+    }
+    return numMatched;
+  }
+  function getXClosestPodcastGenres(targetStr, x) {
+    targetStr = state.enteredGenre;
+    let keyArr = [];
+    for (const element of state.podcastsArr) {
+      keyArr.push(numberOfMatchedChar(targetStr, element));
+    }
+
+    state.podcastsArr.sort(function(a, b){  
+      return keyArr[state.podcastsArr.indexOf(a)]<keyArr[state.podcastsArr.indexOf(b)]?1:-1;
+    });
+
+    console.log(state.podcastsArr);
+    return state.podcastsArr.slice(0,x+1);
+  }
+  function addGenreToState (genre) {
+    const genLst = new Set(...(state.selectedGenres), genre);
+    setState({
+      ...state,
+      selectedGenres: genLst,
+    });
+  }
+  function renderSeletedList (yourGenres) {
+    let retArr = []
+    for (const genre of yourGenres) {
+      retArr.push(
+        <div>{genre}</div>
+      );
+    }
+    return(retArr);
+  }
+  function renderGenresList (genres) {
+    let retArr = []
+    for (const genre of genres) {
+      retArr.push(
+			<div id="Genre2">
+				<svg class="Line_3_Copy_bj" viewBox="0.545 1.074 317.799 1.0735293626785278">
+					<path id="Line_3_Copy_bj" d="M 0.5451751351356506 1.073529362678528 L 318.3441772460938 1.073529362678528">
+					</path>
+				</svg>
+				<div id="Classical_Art">
+					<span><button onClick={()=>addGenreToState(genre)}>{genre}</button></span>
+				</div>
+				<div id="IconlyLightPlus_bl" class="Iconly_Light_Plus">
+					<div id="Plus_bm">
+						<svg class="Line_185_bn" viewBox="0.476 0 1.5 7.326">
+							<path id="Line_185_bn" d="M 0.4761904776096344 0 L 0.4761904776096344 7.326355934143066">
+							</path>
+						</svg>
+						<svg class="Line_186_bo" viewBox="0 0.476 7.333 1.5">
+							<path id="Line_186_bo" d="M 7.333333492279053 0.4757373929023743 L 0 0.4757373929023743">
+							</path>
+						</svg>
+						<svg class="Path_bp" viewBox="0 0 20 20">
+							<path id="Path_bp" d="M 14.68571472167969 0 L 5.314285755157471 0 C 2.047619104385376 0 0 2.312083721160889 0 5.585156917572021 L 0 14.41484260559082 C 0 17.68791580200195 2.038095235824585 20 5.314285755157471 20 L 14.68571472167969 20 C 17.96190452575684 20 20 17.68791580200195 20 14.41484260559082 L 20 5.585156917572021 C 20 2.312083721160889 17.96190452575684 0 14.68571472167969 0 Z">
+							</path>
+						</svg>
+					</div>
+				</div>
+			</div>
+      );
+    }
+    return(retArr);
+  }
+
+
+
+
+
+
+
+
+
   return (
     <div id="iPhone_13__13_Pro_-_Preferences">
 	<div id="Scroll_Content">
@@ -272,13 +369,19 @@ export function PodcastApp(){
 			</rect>
 		</svg>
 		<div id="Search_Bar">
+      
+<div className="Rectangle_cws">
+  <input id="inputField" className="inputField" type="text"
+    placeholder={ "Genres and Subgenres" } onChange={handleChange}/>
+  <div>
+    {renderGenresList(getXClosestPodcastGenres(state.enteredGenre, 5))}
+    {renderSeletedList(state.selectedGenres)}
+  </div>
+</div>
 			<svg class="Rectangle_cw">
 				<rect id="Rectangle_cw" rx="15.63230037689209" ry="15.63230037689209" x="0" y="0" width="364" height="40">
 				</rect>
 			</svg>
-			<div id="Your_Activity_Copy">
-				<span>Genres and Subgenres</span>
-			</div>
 			<svg class="Shape" viewBox="26 127 19.54 19.492">
 				<path id="Shape" d="M 44.92440414428711 146.4920959472656 C 44.76101303100586 146.4920959472656 44.60695266723633 146.4284973144531 44.49059295654297 146.3130187988281 L 39.62250518798828 141.4566192626953 C 38.12710571289062 142.7450561523438 36.21685409545898 143.4546051025391 34.2449951171875 143.4546051025391 C 32.04202270507812 143.4546051025391 29.97085380554199 142.5986480712891 28.41300392150879 141.0444183349609 C 26.85703468322754 139.4927825927734 26.00003433227539 137.4264068603516 25.9998836517334 135.2259216308594 C 25.99972343444824 133.0249786376953 26.85672378540039 130.9579467773438 28.41300392150879 129.4056091308594 C 29.96782493591309 127.8542709350586 32.03915405273438 126.9999084472656 34.24544525146484 126.9999084472656 C 36.45174407958984 126.9999084472656 38.5230827331543 127.8542709350586 40.07790374755859 129.4056091308594 C 41.5569953918457 130.8816680908203 42.41067504882812 132.8453369140625 42.48169326782227 134.9348754882812 C 42.55231475830078 137.0126800537109 41.84565353393555 139.0207061767578 40.49189376831055 140.5890197753906 L 45.36000442504883 145.4454193115234 C 45.47578430175781 145.5611877441406 45.53955459594727 145.7152557373047 45.53955459594727 145.8792114257812 C 45.53955459594727 146.0431518554688 45.47578430175781 146.1972045898438 45.36000442504883 146.3130187988281 C 45.24364471435547 146.4284973144531 45.08895492553711 146.4920959472656 44.92440414428711 146.4920959472656 Z M 34.2449951171875 128.2257080078125 C 32.3680534362793 128.2257080078125 30.60531425476074 128.9528503417969 29.28150367736816 130.2732086181641 C 27.95782470703125 131.5938262939453 27.22883415222168 133.3524169921875 27.22882461547852 135.2249908447266 C 27.22882461547852 137.0975646972656 27.95781517028809 138.8561553955078 29.28150367736816 140.1768188476562 C 30.6077938079834 141.4994812011719 32.37052536010742 142.2279052734375 34.2449951171875 142.2279052734375 C 36.12036514282227 142.2279052734375 37.88310241699219 141.4994812011719 39.20850372314453 140.1768188476562 C 40.53262329101562 138.8561553955078 41.26184463500977 137.0975646972656 41.26184463500977 135.2249908447266 C 41.26184463500977 133.3524169921875 40.53262329101562 131.5938262939453 39.20850372314453 130.2732086181641 C 37.88467407226562 128.9528503417969 36.12192535400391 128.2257080078125 34.2449951171875 128.2257080078125 Z">
 				</path>

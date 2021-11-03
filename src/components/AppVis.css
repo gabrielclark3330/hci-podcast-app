@@ -930,6 +930,7 @@
   transform: matrix(1,0,0,1,0,0);
 }
 #Your_Genres {
+  z-index: 1;
   position: absolute;
   width: 365.25px;
   height: 140.419px;
@@ -1190,6 +1191,7 @@
   fill: rgba(255,255,255,1);
 }
 .Rectangle_cw {
+  z-index: -1;
   filter: drop-shadow(0px 10px 62px rgba(0, 0, 0, 0.055));
   position: absolute;
   overflow: visible;
@@ -1197,6 +1199,28 @@
   height: 226px;
   left: 0px;
   top: 0px;
+}
+#Rectangle_cws {
+  fill: rgba(255,255,255,1);
+}
+.Rectangle_cws {
+  filter: drop-shadow(0px 10px 62px rgba(0, 0, 0, 0.055));
+  position: absolute;
+  overflow: visible;
+  width: 550px;
+  height: 226px;
+  left: -90px;
+  top: 1px;
+}
+.inputField {
+  text-align: center;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  height: 40px;
+  width: 350px;
+  border-radius: 15px;
 }
 #Your_Activity_Copy {
   left: 52px;
